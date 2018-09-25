@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26228.18
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aula 2-14 - While", "Aula 2-14 - While\Aula 2-14 - While.csproj", "{6B2DA377-829A-4C0B-8368-086D82490CFC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6B2DA377-829A-4C0B-8368-086D82490CFC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6B2DA377-829A-4C0B-8368-086D82490CFC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6B2DA377-829A-4C0B-8368-086D82490CFC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6B2DA377-829A-4C0B-8368-086D82490CFC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
