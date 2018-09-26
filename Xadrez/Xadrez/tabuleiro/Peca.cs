@@ -6,13 +6,13 @@ using System.Threading.Tasks;
 
 namespace Xadrez.tabuleiro {
     class Peca {
-        public int Posicao { get; set; }
+        public Posicao posicao;
         public Cor Cor { get; protected set; }
         public int QtdMovimentos { get; set; }
         public Tabuleiro Tab { get; protected set; }
 
-        public Peca(int posicao, Tabuleiro tabuleiro, Cor cor) {
-            Posicao = posicao;
+        public Peca(Tabuleiro tabuleiro, Cor cor) {
+            this.posicao = null;
             Cor = cor;
             Tab = tabuleiro;
             QtdMovimentos = 0;
