@@ -1,9 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Xadrez.tabuleiro;
+using Xadrez.xadrez;
 
 namespace Xadrez {
     class Tela {
@@ -34,6 +31,13 @@ namespace Xadrez {
                 Console.Write(peca);
                 Console.ForegroundColor = aux;
             }
+        }
+
+        public static PosicaoXadrez lerPosicaoXadrez() {
+            string s = Console.ReadLine();
+            char coluna = s[0];
+            int linha = int.Parse(s[1] + "");
+            return new PosicaoXadrez(coluna, linha);
         }
     }
 }
