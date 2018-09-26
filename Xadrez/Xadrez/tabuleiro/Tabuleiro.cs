@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Xadrez.tabuleiro {
+﻿namespace Xadrez.tabuleiro {
     class Tabuleiro {
         public int Linhas { get; set; }
         public int Colunas { get; set; }
@@ -30,6 +24,15 @@ namespace Xadrez.tabuleiro {
 
             pecas[pos.Linha, pos.Coluna] = p;
             p.posicao = pos;
+        }
+
+        public Peca retirarPeca(Posicao pos) {
+            if (peca(pos) == null)
+                return null;
+            Peca aux = peca(pos);
+            aux.posicao = null;
+            pecas[pos.Linha, pos.Coluna] = null;
+            return aux;
         }
 
         public bool posicaoValida(Posicao pos) {
