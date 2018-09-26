@@ -1,11 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Xadrez.tabuleiro {
-    class Peca {
+﻿namespace Xadrez.tabuleiro {
+    abstract class Peca {
         public Posicao posicao;
         public Cor Cor { get; protected set; }
         public int QtdMovimentos { get; set; }
@@ -17,9 +11,7 @@ namespace Xadrez.tabuleiro {
             Tab = tabuleiro;
             QtdMovimentos = 0;
         }
-
-        public void IncrementarQtdMovimentos() {
-            QtdMovimentos++;
-        }          
+        
+        public abstract bool[,] movimentosPossiveis();
     }
 }
